@@ -85,13 +85,6 @@ export default function CertificatesPage() {
                 >
                   <FaEye /> View
                 </button>
-
-                <button
-                  onClick={() => window.open(`/verify/${cert.certificateId}`, "_blank")}
-                  className="flex items-center justify-center gap-2 border border-gray-300 hover:bg-gray-50 px-5 rounded-2xl transition-all"
-                >
-                  <FaDownload size={18} />
-                </button>
               </div>
             </div>
           </motion.div>
