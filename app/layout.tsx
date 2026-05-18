@@ -6,6 +6,7 @@ import Navbar from "@/src/components/Navbar";
 import Footer from "@/src/components/Footer";
 import { cn } from "@/lib/utils";
 import ClientWrapper from "@/src/components/ClientWrapper";
+import MentorPromoModal from "@/src/components/MentorPromo";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 const inter = Inter({ subsets: ["latin"] });
@@ -35,7 +36,7 @@ export default function RootLayout({
             <Navbar />
 
             <main>{children}</main>
-
+            <MentorPromoModal />
             <Footer />
           </ClientWrapper>
         </AuthProvider>
